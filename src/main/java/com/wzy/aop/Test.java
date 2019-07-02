@@ -36,5 +36,14 @@ public class Test {
      *
      * execution(modifiers-pattern(作用域 public、private)? ret-type-pattern(返回类型) declaring-type-pattern(类名的全路径)?name-pattern(方法名)(param-pattern(参数))
      *             throws-pattern?(异常))
+     * args  属性匹配
+     * within  路径匹配
+     * annotation 注解匹配
+     * this 指当前代理对象，当proxyTargetClass为true时，代理对象等于目标对象，为false时，代理对象不等同于目标对象
+     * target 指目标对象
+     *
+     * JDK动态代理一定要基于聚合（接口）,因为java中类不能多继承，可以实现多个接口,再spring底层JDK代理已经继承了Proxy，
+     * 所以不能再继承目标对象，只能实现目标对象
+     *@EnableAspectJAutoProxy(proxyTargetClass = true)
      */
 }

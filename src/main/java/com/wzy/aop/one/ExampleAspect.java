@@ -20,9 +20,37 @@ public class ExampleAspect {
 
     }
 
-    @Before("pointcut()")
+    @Pointcut("within(com.wzy.aop.one.*))")
+    public void pointWithin() {
+
+    }
+
+    @Pointcut("args(java.lang.String))")
+    public void pointArgs() {
+
+    }
+
+//    @Pointcut("@annotation(TestAnnotation))")
+//    public void pointAnnotation() {
+//
+//    }
+
+    @Pointcut("this(IndexDao))")
+    public void pointThis() {
+
+    }
+
+    @Pointcut("target(IndexDao))")
+    public void pointTarget() {
+
+    }
+
+//    @Before("pointWithin() && !pointArgs()")
+    @Before("pointTarget()")
     public void advice() {
         System.out.println("example test before");
     }
+
+
 
 }

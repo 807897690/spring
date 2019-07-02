@@ -11,6 +11,11 @@ import org.springframework.stereotype.Component;
 @Component
 public class Example {
 
+    @TestAnnotation
+    public void test(String str) {
+        System.out.println("example test");
+    }
+
     public void test() {
         System.out.println("example test");
     }
