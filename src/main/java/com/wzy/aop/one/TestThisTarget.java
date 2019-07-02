@@ -12,7 +12,7 @@ public class TestThisTarget {
 
     public static void main(String[] args) {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(AspectConfig.class);
-        IndexDao dao = (IndexDao) context.getBean(IndexDao.class);
+        Dao dao = (Dao) context.getBean(Dao.class);
         System.out.println(dao instanceof  Dao);
         dao.test();
     }

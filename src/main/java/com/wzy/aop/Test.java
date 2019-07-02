@@ -43,7 +43,7 @@ public class Test {
      * target 指目标对象
      *
      * JDK动态代理一定要基于聚合（接口）,因为java中类不能多继承，可以实现多个接口,再spring底层JDK代理已经继承了Proxy，
-     * 所以不能再继承目标对象，只能实现目标对象
+     * 所以不能再继承目标对象，只能实现目标对象,这里的目标对象指的是接口，以为JDK代理只能代理接口，不能代理类
      *@EnableAspectJAutoProxy(proxyTargetClass = true)
      */
 }
