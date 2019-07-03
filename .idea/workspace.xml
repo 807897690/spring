@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6a77ef6-4d6a-44c2-a406-974dddb87f4e" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wzy/aop/one/IndexDao2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wzy/aop/one/ExampleAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wzy/aop/one/ExampleAspect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wzy/aop/one/TestThisTarget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wzy/aop/one/TestThisTarget.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wzy/aop/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wzy/aop/Test.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -44,7 +41,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ExampleAspect.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ExampleAspect.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/wzy/aop/one/ExampleAspect.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="198">
@@ -61,8 +58,8 @@
       <file leaf-file-name="TestThisTarget.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/wzy/aop/one/TestThisTarget.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="330">
+              <caret line="15" column="48" lean-forward="true" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -92,8 +89,8 @@
       <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="22" column="50" lean-forward="true" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
+            <state relative-caret-position="418">
+              <caret line="19" column="50" lean-forward="true" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -121,11 +118,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Test.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Test.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/wzy/aop/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="443">
-              <caret line="37" column="37" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
+            <state relative-caret-position="507">
+              <caret line="48" column="1" lean-forward="true" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -184,10 +181,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/wzy/aop/one/Test.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wzy/aop/one/IndexDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wzy/aop/one/AspectConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wzy/aop/Test.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wzy/aop/one/IndexDao2.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wzy/aop/one/TestThisTarget.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wzy/aop/one/ExampleAspect.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wzy/aop/Test.java" />
       </list>
     </option>
   </component>
@@ -301,7 +298,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562075445473" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="E:/workspace/xqd_java/newwallet" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
@@ -446,7 +443,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21828000" />
+    <option name="totallyTimeSpent" value="25799000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -458,11 +455,11 @@
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.32027897" side_tool="true" weight="0.32922733" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.39109442" side_tool="true" weight="0.40089586" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.67972106" weight="0.32922733" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946353" visible="true" weight="0.40089586" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.60890555" visible="true" weight="0.40089586" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
@@ -577,8 +574,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="22" column="50" lean-forward="true" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
+        <state relative-caret-position="418">
+          <caret line="19" column="50" lean-forward="true" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
         </state>
       </provider>
     </entry>
@@ -833,13 +830,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wzy/aop/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="37" column="37" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wzy/aop/one/IndexDao2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
@@ -848,13 +838,6 @@
             <element signature="e#183#184#0" expanded="true" />
             <element signature="e#219#220#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wzy/aop/one/TestThisTarget.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
@@ -874,6 +857,20 @@
             <element signature="e#956#957#0" expanded="true" />
             <element signature="e#1013#1014#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wzy/aop/one/TestThisTarget.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="48" lean-forward="true" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wzy/aop/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="507">
+          <caret line="48" column="1" lean-forward="true" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
         </state>
       </provider>
     </entry>
