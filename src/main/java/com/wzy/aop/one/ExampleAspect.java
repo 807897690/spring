@@ -40,7 +40,7 @@ public class ExampleAspect {
 
     }
 
-    @Pointcut("target(IndexDao))")
+    @Pointcut("target(IndexDao2))")
     public void pointTarget() {
 
     }
