@@ -43,7 +43,10 @@ public class Test {
      * target 指目标对象，实际指向的是一个接口
      *
      * JDK动态代理一定要基于聚合（接口）,因为java中类不能多继承，可以实现多个接口,再spring底层JDK代理已经继承了Proxy，
-     * 所以不能再继承目标对象，只能实现目标对象,这里的目标对象指的是接口，以为JDK代理只能代理接口，不能代理类
+     * 所以不能再继承目标对象，只能实现目标对象,这里的目标对象指的是接口，因为JDK代理只能代理接口，不能代理类
      *@EnableAspectJAutoProxy(proxyTargetClass = true) 使用cglib代理
+     *
+     * @around 环绕模式，可以在执行目标方法前、后执行业务代码，也可以对需要的方法进行参数上的修改或者封装
+     * @DeclareParents(value = "com.wzy.aop.one.*", defaultImpl = IndexDao2.class)引入该路径下的所有实现类，然后去调用IndexDao2的方法实现
      */
 }

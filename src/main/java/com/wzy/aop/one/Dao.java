@@ -8,6 +8,6 @@ package com.wzy.aop.one;
  */
 public interface Dao {
 
-    void test();
+    void test(String str);
 
 }

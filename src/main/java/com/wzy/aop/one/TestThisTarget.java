@@ -13,8 +13,10 @@ public class TestThisTarget {
     public static void main(String[] args) {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(AspectConfig.class);
         Dao dao = (Dao) context.getBean("indexDao2");
-        System.out.println(dao instanceof  Dao);
-        dao.test();
+        Dao dao1 = (Dao) context.getBean("indexDao2");
+        System.out.println(dao.hashCode() + "---" + dao.hashCode());
+        dao.test("hello");
+        dao1.test("haha");
     }
 
 }
