@@ -6,4 +6,6 @@ public interface Dao {
 
     public String set(String str);
 
+    public String set(String str, String str2);
+
 }

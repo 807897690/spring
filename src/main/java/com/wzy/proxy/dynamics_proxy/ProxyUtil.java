@@ -50,8 +50,8 @@ public class ProxyUtil {
                 i++;
             }
             if(argsContent.length() > 0) {
-                argsContent = argsContent.substring(0, argsContent.lastIndexOf(",") - 1);
-                paramsContent = paramsContent.substring(0, paramsContent.lastIndexOf(",") - 1);
+                argsContent = argsContent.substring(0, argsContent.lastIndexOf(","));
+                paramsContent = paramsContent.substring(0, paramsContent.lastIndexOf(","));
             }
             methodContent +=  tab+"public "+ returnType + " " + methodName + "( " +  argsContent + ") {" + line
                             + tab + tab + "System.out.println(\"log\");"+line;
@@ -80,7 +80,6 @@ public class ProxyUtil {
             JavaCompiler.CompilationTask t = compiler.getTask(null, fileManager, null, null, null, units);
             t.call();
             fileManager.close();
-
             URL[] urls = new URL[]{new URL("file:D:\\\\")};
             URLClassLoader urlClassLoader = new URLClassLoader(urls);
             Class clazz = urlClassLoader.loadClass("com.wzy.proxy.dynamics_proxy.$Proxy");

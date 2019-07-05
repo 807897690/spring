@@ -5,9 +5,13 @@ public class $Proxy implements Dao {
 	public $Proxy(Dao target){
 		this.target = target;
 	}
-	public String set( String p) {
+	public String set( String p0) {
 		System.out.println("log");
-		return target.set(p);
+		return target.set(p0);
+	}
+	public String set( String p0,String p1) {
+		System.out.println("log");
+		return target.set(p0,p1);
 	}
 	public void test( ) {
 		System.out.println("log");
