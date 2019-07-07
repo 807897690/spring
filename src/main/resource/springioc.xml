@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+
+    <bean id="dao" class="com.wzy.springioc.UserDaoImpl"></bean>
+    <bean id="dao1" class="com.wzy.springioc.UserDaoImpl1"></bean>
+    <bean id="service" class="com.wzy.springioc.UserService">
+        <property name="dao" ref="dao"></property>
+    </bean>
+
+</beans>
