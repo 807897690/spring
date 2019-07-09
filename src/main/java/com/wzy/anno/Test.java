@@ -1,5 +1,8 @@
 package com.wzy.anno;
 
+import com.wzy.anno.service.DemoService;
+import com.wzy.anno.service.DemoService2;
+
 /**
  * @author wzy
  * @title: Test

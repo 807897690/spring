@@ -1,4 +1,4 @@
-package com.wzy.anno;
+package com.wzy.anno.service;
 
 /**
  * @author wzy

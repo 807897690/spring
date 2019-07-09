@@ -4,7 +4,9 @@ import org.springframework.util.StringUtils;
 
 import java.io.File;
 import java.lang.reflect.Field;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -25,11 +27,14 @@ public class MyAnnotationConfigApplicationContext {
         String path = this.getClass().getResource("/").getPath();
         String basePackagePath = basePackage.replaceAll("\\.","\\\\");
         File file = new File(path + "/" + basePackagePath);
-        String[] names = file.list();
+        List<String> names = classNames(file);
+        System.out.println(names);
         for (String name : names) {
             name = name.replace(".class", "");
+            name = name.substring(name.indexOf("classes\\")+8, name.length());
+            name = name.replaceAll("\\\\", "\\.");
             try {
-                Class clazz = Class.forName(basePackage+"."+name);
+                Class clazz = Class.forName(name);
                 String beanName = null;
                 Object object = null;
                 if(clazz.isAnnotationPresent(MyServiceAnno.class)) {
@@ -74,6 +79,19 @@ public class MyAnnotationConfigApplicationContext {
 
     public Object getBean(String beanName) {
         return beanMap.get(beanName);
+    }
+
+    private List<String> classNames(File file) {
+        List<String> namse = new ArrayList<String>();
+        File[] files = file.listFiles();
+        for (File file1 : files) {
+            if(file1.isDirectory()) {
+                namse.addAll(classNames(file1));
+            }else {
+                namse.add(file1.getPath());
+            }
+        }
+        return namse;
     }
 
 }

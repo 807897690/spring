@@ -1,4 +1,7 @@
-package com.wzy.anno;
+package com.wzy.anno.service;
+
+import com.wzy.anno.MyAutowireAnno;
+import com.wzy.anno.MyServiceAnno;
 
 /**
  * @author wzy
