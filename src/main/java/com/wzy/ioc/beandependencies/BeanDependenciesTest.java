@@ -1,5 +1,6 @@
 package com.wzy.ioc.beandependencies;
 
+import com.wzy.ioc.beandependencies.service.ConfigService;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**
@@ -13,10 +14,11 @@ public class BeanDependenciesTest {
      * bean生成的依赖
      */
     public static void main(String[] args) {
-        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(BeanDependenciesConfig.class);
-        String[] names = context.getBeanDefinitionNames();
-        for(String name : names) {
-            System.out.println(name);
-        }
+//        org.apache.ibatis.logging.LogFactory.useLog4JLogging();
+        AnnotationConfigApplicationContext context =
+                new AnnotationConfigApplicationContext(BeanDependenciesConfig.class);
+        System.out.println(context.getBean(ConfigService.class).query());
+        context.getBean(ConfigService.class).update();
+        System.out.println(context.getBean(ConfigService.class).query());
     }
 }
