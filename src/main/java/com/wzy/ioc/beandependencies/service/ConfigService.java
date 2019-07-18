@@ -28,7 +28,15 @@ import java.util.Map;
  *      而在mybatis与spring5的整合jar包中，顺序使用为slf4j、jul、log4j2、log4j，所以这时会默认优先使用jul,
  *      而jul得默认打印日志级别为info,所以这时控制台上看不到日志
  *
- *
+ * mybatis底层先为Mapper创建代理对象MapperPoxy，传入MapperFactoryBean(是一个FactoryBean)作为目标对象,
+ * 然后执行其代理逻辑（invoke方法）,然后调用SqlSessionTemplate调用其方法，而在SqlSessionTemplate中是
+ * 为其创建一个代理对象，通过其代理对象来执行。
+ * 注意：1、在spring容器解析每个Mapper得时候，都会创建一个MappedStatement，其中存放了id以及sql语句,
+ * 存放到 Map<String, MappedStatement> mappedStatements = new StrictMap<MappedStatement>中；
+ * 2、上述说调用SqlSessionTempLate执行，但是SqlSessionTemplate是什么时候实例化得呢？e
+ * 这里mybatis采用了spring的byType,在spring容器解析Mapper的时候，创建GenericBeanDefinition对象，
+ * 设置其AutowiredModel为byType(也就是数值2)，又因为MapperFactoryBean继承了SqlSessionDaoSupport，
+ * 在SqlSessionDaoSupport中存在setSqlSessionFactory()方法，在这个方法初始化了SqlSessionTemplate
  *
  * @date 2019/7/17 15:09
  */

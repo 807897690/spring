@@ -1,5 +1,6 @@
 package com.wzy.ioc.beandependencies;
 
+import com.wzy.ioc.beandependencies.demo.Demo1;
 import com.wzy.ioc.beandependencies.service.ConfigService;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -18,7 +19,6 @@ public class BeanDependenciesTest {
         AnnotationConfigApplicationContext context =
                 new AnnotationConfigApplicationContext(BeanDependenciesConfig.class);
         System.out.println(context.getBean(ConfigService.class).query());
-        context.getBean(ConfigService.class).update();
-        System.out.println(context.getBean(ConfigService.class).query());
+        System.out.println(context.getBean(Demo1.class).getDemo2()+"-----");
     }
 }

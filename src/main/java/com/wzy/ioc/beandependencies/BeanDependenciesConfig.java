@@ -1,5 +1,6 @@
 package com.wzy.ioc.beandependencies;
 
+import com.wzy.ioc.beandependencies.demo.MyImportBeanDefinitionRegistrar;
 import org.apache.ibatis.logging.log4j.Log4jImpl;
 import org.apache.ibatis.logging.slf4j.Slf4jImpl;
 import org.mybatis.spring.SqlSessionFactoryBean;
@@ -7,6 +8,7 @@ import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Import;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 
 import javax.sql.DataSource;
@@ -20,6 +22,7 @@ import javax.sql.DataSource;
 @Configuration
 @ComponentScan("com.wzy.ioc.beandependencies")
 @MapperScan("com.wzy.ioc.beandependencies.dao")
+@Import(MyImportBeanDefinitionRegistrar.class)
 public class BeanDependenciesConfig {
 
     @Bean

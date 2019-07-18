@@ -21,6 +21,9 @@ public class TestCallback {
      * Methods annotated with @PreDestroy  1、在需要回调的方法上加上@PreDestroy注解
      * destroy() as defined by the DisposableBean callback interface     2、需要回调的方法所在的类实现DisposableBean的destroy()方法
      * A custom configured destroy() method  3、在xml文件中定义destory-method
+     *
+     *
+     * 这三种实现有先后顺序，先执行注解@PostConstaruct、后执行InitializingBean的afterPropertiesSet()方法
      */
     public static void main(String[] args) {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(CallBackConfig.class);
