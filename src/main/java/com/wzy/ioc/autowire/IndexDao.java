@@ -1,7 +1,7 @@
 package com.wzy.ioc.autowire;
 
 /**
- * @ClassName IndexDao
+ * @ClassName OrderDao
  * @Desc TODO
  * @Author Administrator
  * @Date 2019/7/2 9:18

@@ -1,5 +1,6 @@
 package com.wzy.anno;
 
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.StringUtils;
 
 import java.io.File;

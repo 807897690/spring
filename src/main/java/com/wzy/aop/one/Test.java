@@ -21,7 +21,7 @@ public class Test {
 //        Example example = context.getBean(Example.class);
 //        example.test("aa");
 //        example.test();
-//        IndexDao dao = (IndexDao)context.getBean(IndexDao.class);
+//        OrderDao dao = (OrderDao)context.getBean(OrderDao.class);
 //        System.out.println(dao instanceof  Dao);
 //        dao.test();
         Class<?>[] interfaces = new Class[]{Dao.class};
