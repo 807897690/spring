@@ -22,7 +22,7 @@ public class Test {
 //        example.test("aa");
 //        example.test();
 //        OrderDao dao = (OrderDao)context.getBean(OrderDao.class);
-//        System.out.println(dao instanceof  Dao);
+//        System.out.println(dao instanceof  dao);
 //        dao.test();
         Class<?>[] interfaces = new Class[]{Dao.class};
         byte bytes[] = ProxyGenerator.generateProxyClass("TestProxy", interfaces);

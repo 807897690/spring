@@ -6,7 +6,7 @@ import java.lang.reflect.Proxy;
 public class Test {
 
     public static void main(String[] args) {
-//        Dao dao = (Dao) ProxyUtil.newInstance(new DemoDao());
+//        dao dao = (dao) ProxyUtil.newInstance(new DemoDao());
 //        dao.test();
 //        System.out.println(dao.set("test"));
 //        System.out.println(dao.set("hello", "world"));
