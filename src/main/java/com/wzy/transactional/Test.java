@@ -5,7 +5,7 @@ package com.wzy.transactional;
  * @title: Test
  * @description:
  * 事务的四大特点：一致性、原子性、隔离性、持久性
- * select @@tx_isolation; 查询数据库隔离级别Read uncommitted（未提交读）、Read committed（可提交读）、
+ * select @@tx_isolation; 查询数据库隔离级别   Read uncommitted（未提交读）、Read committed（可提交读）、
  * Repeatable read（可重复读）、Serializable（序列化）
  * 传播行为：
  * 1、PROPAGATION_REQUIRED：如果当前没有事务，就创建一个新事务，如果当前存在事务，就加入该事务，该设置是最常用的设置。
