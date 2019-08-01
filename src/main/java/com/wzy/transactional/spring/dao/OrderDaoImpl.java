@@ -41,8 +41,10 @@ public class OrderDaoImpl implements OrderDao, ApplicationContextAware {
             /**
              * 第二种
              */
-            OrderDao orderDao = (OrderDao) AopContext.currentProxy();
-            orderDao.updateProduct();
+//            OrderDao orderDao = (OrderDao) AopContext.currentProxy();
+//            orderDao.updateProduct();
+//            productDao.update();
+            updateProduct();
         }catch (Exception e) {
             e.printStackTrace();
         }

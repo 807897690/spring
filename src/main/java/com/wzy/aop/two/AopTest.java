@@ -14,7 +14,7 @@ public class AopTest {
 
     public static void main(String[] args) {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(AopConifg.class);
-        context.getBean(IndexService.class).test("B");
+        context.getBean(IndexService.class).test("A");
     }
 
 }

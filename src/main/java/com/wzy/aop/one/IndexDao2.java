@@ -10,7 +10,7 @@ import org.springframework.stereotype.Repository;
  * @Date 2019/7/3 9:25
  **/
 @Repository
-@Scope("prototype")
+//@Scope("prototype")
 public class IndexDao2 implements Dao{
     public void test() {
         System.out.println("dao2");

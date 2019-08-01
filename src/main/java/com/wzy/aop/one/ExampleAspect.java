@@ -17,7 +17,7 @@ import org.springframework.stereotype.Component;
 public class ExampleAspect {
 
 //    @DeclareParents(value = "com.wzy.aop.one.*", defaultImpl = IndexDao2.class)
-//    public static dao dao;
+//    public static Dao dao;
 
     @Pointcut("execution(* com.wzy.aop.one..*.*(..))")
     public void pointcut() {
